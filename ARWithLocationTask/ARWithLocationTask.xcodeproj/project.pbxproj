@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D0FB015FF4532C3A68FD023 /* Pods_ARWithLocationTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4994364401DE922F26C86B0 /* Pods_ARWithLocationTask.framework */; };
+		84243BE3203ABDCB004FF52E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243BE2203ABDCB004FF52E /* AppDelegate.swift */; };
+		84243BE8203ABDCB004FF52E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84243BE6203ABDCB004FF52E /* Main.storyboard */; };
+		84243BEA203ABDCB004FF52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84243BE9203ABDCB004FF52E /* Assets.xcassets */; };
+		84243BED203ABDCB004FF52E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84243BEB203ABDCB004FF52E /* LaunchScreen.storyboard */; };
+		84243BF8203ABDCB004FF52E /* ARWithLocationTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243BF7203ABDCB004FF52E /* ARWithLocationTaskTests.swift */; };
+		84243C03203ABDCB004FF52E /* ARWithLocationTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C02203ABDCB004FF52E /* ARWithLocationTaskUITests.swift */; };
+		84243C1A203ABE74004FF52E /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C11203ABE74004FF52E /* CGPoint+Extensions.swift */; };
+		84243C1B203ABE74004FF52E /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C12203ABE74004FF52E /* CLLocation+Extensions.swift */; };
+		84243C1C203ABE74004FF52E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C13203ABE74004FF52E /* LocationManager.swift */; };
+		84243C1D203ABE74004FF52E /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C14203ABE74004FF52E /* LocationNode.swift */; };
+		84243C1E203ABE74004FF52E /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C15203ABE74004FF52E /* SceneLocationEstimate+Extensions.swift */; };
+		84243C1F203ABE74004FF52E /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C16203ABE74004FF52E /* SceneLocationEstimate.swift */; };
+		84243C20203ABE74004FF52E /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C17203ABE74004FF52E /* SceneLocationView.swift */; };
+		84243C21203ABE74004FF52E /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C18203ABE74004FF52E /* SCNVector3+Extensions.swift */; };
+		84243C22203ABE74004FF52E /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C19203ABE74004FF52E /* ARViewController.swift */; };
+		84243C25203ABE91004FF52E /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84243C24203ABE90004FF52E /* ReachabilityHelper.swift */; };
+		84A67A40203AC54100C83C01 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A67A3F203AC54100C83C01 /* LocationViewController.swift */; };
+		84A67A42203ACDAB00C83C01 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A67A41203ACDAB00C83C01 /* art.scnassets */; };
+		84A67A44203AD1AA00C83C01 /* UserCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A67A43203AD1A900C83C01 /* UserCollection.swift */; };
+		84A67A46203AD32A00C83C01 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A67A45203AD32A00C83C01 /* LocationTableViewCell.swift */; };
+		84A67A48203AD75400C83C01 /* CoreConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A67A47203AD75400C83C01 /* CoreConstant.swift */; };
+		88938D5674509965C30290A7 /* Pods_ARWithLocationTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23CEC3C88243359133A3E68 /* Pods_ARWithLocationTaskTests.framework */; };
+		C59D59682A828C373F9A7E8D /* Pods_ARWithLocationTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82697656B341AE3E6606936 /* Pods_ARWithLocationTaskUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84243BF4203ABDCB004FF52E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84243BD7203ABDCB004FF52E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84243BDE203ABDCB004FF52E;
+			remoteInfo = ARWithLocationTask;
+		};
+		84243BFF203ABDCB004FF52E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84243BD7203ABDCB004FF52E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84243BDE203ABDCB004FF52E;
+			remoteInfo = ARWithLocationTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		085ED5586F149704C7EF2274 /* Pods-ARWithLocationTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARWithLocationTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARWithLocationTaskUITests/Pods-ARWithLocationTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		84243BDF203ABDCB004FF52E /* ARWithLocationTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARWithLocationTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84243BE2203ABDCB004FF52E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84243BE7203ABDCB004FF52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84243BE9203ABDCB004FF52E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84243BEC203ABDCB004FF52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84243BEE203ABDCB004FF52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84243BF3203ABDCB004FF52E /* ARWithLocationTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARWithLocationTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84243BF7203ABDCB004FF52E /* ARWithLocationTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWithLocationTaskTests.swift; sourceTree = "<group>"; };
+		84243BF9203ABDCB004FF52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84243BFE203ABDCB004FF52E /* ARWithLocationTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARWithLocationTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84243C02203ABDCB004FF52E /* ARWithLocationTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWithLocationTaskUITests.swift; sourceTree = "<group>"; };
+		84243C04203ABDCB004FF52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84243C11203ABE74004FF52E /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		84243C12203ABE74004FF52E /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		84243C13203ABE74004FF52E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		84243C14203ABE74004FF52E /* LocationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
+		84243C15203ABE74004FF52E /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		84243C16203ABE74004FF52E /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationEstimate.swift; sourceTree = "<group>"; };
+		84243C17203ABE74004FF52E /* SceneLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationView.swift; sourceTree = "<group>"; };
+		84243C18203ABE74004FF52E /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		84243C19203ABE74004FF52E /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		84243C24203ABE90004FF52E /* ReachabilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
+		84A67A3F203AC54100C83C01 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		84A67A41203ACDAB00C83C01 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		84A67A43203AD1A900C83C01 /* UserCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollection.swift; sourceTree = "<group>"; };
+		84A67A45203AD32A00C83C01 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		84A67A47203AD75400C83C01 /* CoreConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreConstant.swift; sourceTree = "<group>"; };
+		84DADE2E5D602B3F4FC83B43 /* Pods-ARWithLocationTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARWithLocationTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARWithLocationTask/Pods-ARWithLocationTask.release.xcconfig"; sourceTree = "<group>"; };
+		B46E8F85512C00AA802F5CE8 /* Pods-ARWithLocationTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARWithLocationTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARWithLocationTaskUITests/Pods-ARWithLocationTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B82697656B341AE3E6606936 /* Pods_ARWithLocationTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARWithLocationTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4994364401DE922F26C86B0 /* Pods_ARWithLocationTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARWithLocationTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB549398AABFBF4173A9EBB5 /* Pods-ARWithLocationTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARWithLocationTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARWithLocationTaskTests/Pods-ARWithLocationTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F23CEC3C88243359133A3E68 /* Pods_ARWithLocationTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARWithLocationTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E40E8AEF176F692DB728C6 /* Pods-ARWithLocationTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARWithLocationTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARWithLocationTask/Pods-ARWithLocationTask.debug.xcconfig"; sourceTree = "<group>"; };
+		FE635B4A3503FC888A499939 /* Pods-ARWithLocationTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARWithLocationTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARWithLocationTaskTests/Pods-ARWithLocationTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84243BDC203ABDCB004FF52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0FB015FF4532C3A68FD023 /* Pods_ARWithLocationTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84243BF0203ABDCB004FF52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88938D5674509965C30290A7 /* Pods_ARWithLocationTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84243BFB203ABDCB004FF52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59D59682A828C373F9A7E8D /* Pods_ARWithLocationTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DAF39E6719DEBD2377D1944 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8E40E8AEF176F692DB728C6 /* Pods-ARWithLocationTask.debug.xcconfig */,
+				84DADE2E5D602B3F4FC83B43 /* Pods-ARWithLocationTask.release.xcconfig */,
+				EB549398AABFBF4173A9EBB5 /* Pods-ARWithLocationTaskTests.debug.xcconfig */,
+				FE635B4A3503FC888A499939 /* Pods-ARWithLocationTaskTests.release.xcconfig */,
+				B46E8F85512C00AA802F5CE8 /* Pods-ARWithLocationTaskUITests.debug.xcconfig */,
+				085ED5586F149704C7EF2274 /* Pods-ARWithLocationTaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		740EF55303E0D17628E01916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4994364401DE922F26C86B0 /* Pods_ARWithLocationTask.framework */,
+				F23CEC3C88243359133A3E68 /* Pods_ARWithLocationTaskTests.framework */,
+				B82697656B341AE3E6606936 /* Pods_ARWithLocationTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84243BD6203ABDCB004FF52E = {
+			isa = PBXGroup;
+			children = (
+				84243BE1203ABDCB004FF52E /* ARWithLocationTask */,
+				84243BF6203ABDCB004FF52E /* ARWithLocationTaskTests */,
+				84243C01203ABDCB004FF52E /* ARWithLocationTaskUITests */,
+				84243BE0203ABDCB004FF52E /* Products */,
+				3DAF39E6719DEBD2377D1944 /* Pods */,
+				740EF55303E0D17628E01916 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84243BE0203ABDCB004FF52E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84243BDF203ABDCB004FF52E /* ARWithLocationTask.app */,
+				84243BF3203ABDCB004FF52E /* ARWithLocationTaskTests.xctest */,
+				84243BFE203ABDCB004FF52E /* ARWithLocationTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84243BE1203ABDCB004FF52E /* ARWithLocationTask */ = {
+			isa = PBXGroup;
+			children = (
+				84A67A49203AE2DD00C83C01 /* App Delegate */,
+				84A67A4E203AE4AD00C83C01 /* View Controllers */,
+				84A67A4C203AE44E00C83C01 /* Managers & Extensions */,
+				84A67A4B203AE41A00C83C01 /* Model And Config */,
+				84A67A4A203AE30D00C83C01 /* StoryBoards */,
+				84A67A41203ACDAB00C83C01 /* art.scnassets */,
+				84243BE9203ABDCB004FF52E /* Assets.xcassets */,
+				84243BEE203ABDCB004FF52E /* Info.plist */,
+			);
+			path = ARWithLocationTask;
+			sourceTree = "<group>";
+		};
+		84243BF6203ABDCB004FF52E /* ARWithLocationTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				84243BF7203ABDCB004FF52E /* ARWithLocationTaskTests.swift */,
+				84243BF9203ABDCB004FF52E /* Info.plist */,
+			);
+			path = ARWithLocationTaskTests;
+			sourceTree = "<group>";
+		};
+		84243C01203ABDCB004FF52E /* ARWithLocationTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84243C02203ABDCB004FF52E /* ARWithLocationTaskUITests.swift */,
+				84243C04203ABDCB004FF52E /* Info.plist */,
+			);
+			path = ARWithLocationTaskUITests;
+			sourceTree = "<group>";
+		};
+		84243C10203ABE74004FF52E /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				84243C19203ABE74004FF52E /* ARViewController.swift */,
+			);
+			path = ARKit;
+			sourceTree = "<group>";
+		};
+		84243C23203ABE90004FF52E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				84243C24203ABE90004FF52E /* ReachabilityHelper.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		84A67A49203AE2DD00C83C01 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				84243BE2203ABDCB004FF52E /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		84A67A4A203AE30D00C83C01 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				84243BE6203ABDCB004FF52E /* Main.storyboard */,
+				84243BEB203ABDCB004FF52E /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		84A67A4B203AE41A00C83C01 /* Model And Config */ = {
+			isa = PBXGroup;
+			children = (
+				84A67A43203AD1A900C83C01 /* UserCollection.swift */,
+				84A67A47203AD75400C83C01 /* CoreConstant.swift */,
+			);
+			path = "Model And Config";
+			sourceTree = "<group>";
+		};
+		84A67A4C203AE44E00C83C01 /* Managers & Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84243C23203ABE90004FF52E /* Reachability */,
+				84243C11203ABE74004FF52E /* CGPoint+Extensions.swift */,
+				84243C12203ABE74004FF52E /* CLLocation+Extensions.swift */,
+				84243C13203ABE74004FF52E /* LocationManager.swift */,
+				84243C14203ABE74004FF52E /* LocationNode.swift */,
+				84243C15203ABE74004FF52E /* SceneLocationEstimate+Extensions.swift */,
+				84243C16203ABE74004FF52E /* SceneLocationEstimate.swift */,
+				84243C17203ABE74004FF52E /* SceneLocationView.swift */,
+				84243C18203ABE74004FF52E /* SCNVector3+Extensions.swift */,
+			);
+			path = "Managers & Extensions";
+			sourceTree = "<group>";
+		};
+		84A67A4D203AE49B00C83C01 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				84A67A3F203AC54100C83C01 /* LocationViewController.swift */,
+				84A67A45203AD32A00C83C01 /* LocationTableViewCell.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		84A67A4E203AE4AD00C83C01 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84243C10203ABE74004FF52E /* ARKit */,
+				84A67A4D203AE49B00C83C01 /* Location */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84243BDE203ABDCB004FF52E /* ARWithLocationTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84243C07203ABDCB004FF52E /* Build configuration list for PBXNativeTarget "ARWithLocationTask" */;
+			buildPhases = (
+				6B4D5EB15B079F7B00C93EF4 /* [CP] Check Pods Manifest.lock */,
+				84243BDB203ABDCB004FF52E /* Sources */,
+				84243BDC203ABDCB004FF52E /* Frameworks */,
+				84243BDD203ABDCB004FF52E /* Resources */,
+				26CA8460227AA6EFFB8B4F4F /* [CP] Embed Pods Frameworks */,
+				D1724ACA6F93AD3386D0DFD1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARWithLocationTask;
+			productName = ARWithLocationTask;
+			productReference = 84243BDF203ABDCB004FF52E /* ARWithLocationTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84243BF2203ABDCB004FF52E /* ARWithLocationTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84243C0A203ABDCB004FF52E /* Build configuration list for PBXNativeTarget "ARWithLocationTaskTests" */;
+			buildPhases = (
+				B504EA4B4E2054EFF9717D8F /* [CP] Check Pods Manifest.lock */,
+				84243BEF203ABDCB004FF52E /* Sources */,
+				84243BF0203ABDCB004FF52E /* Frameworks */,
+				84243BF1203ABDCB004FF52E /* Resources */,
+				BAC150F5D96A66AB451157F1 /* [CP] Embed Pods Frameworks */,
+				1406B84450642B2DB5986BE1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84243BF5203ABDCB004FF52E /* PBXTargetDependency */,
+			);
+			name = ARWithLocationTaskTests;
+			productName = ARWithLocationTaskTests;
+			productReference = 84243BF3203ABDCB004FF52E /* ARWithLocationTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84243BFD203ABDCB004FF52E /* ARWithLocationTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84243C0D203ABDCB004FF52E /* Build configuration list for PBXNativeTarget "ARWithLocationTaskUITests" */;
+			buildPhases = (
+				0D0FCC838FE4D0B83F9E8F5C /* [CP] Check Pods Manifest.lock */,
+				84243BFA203ABDCB004FF52E /* Sources */,
+				84243BFB203ABDCB004FF52E /* Frameworks */,
+				84243BFC203ABDCB004FF52E /* Resources */,
+				F9277D8AF19BB64237D4E5AF /* [CP] Embed Pods Frameworks */,
+				96A81D7D5A0FE96B0BDB9B10 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84243C00203ABDCB004FF52E /* PBXTargetDependency */,
+			);
+			name = ARWithLocationTaskUITests;
+			productName = ARWithLocationTaskUITests;
+			productReference = 84243BFE203ABDCB004FF52E /* ARWithLocationTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84243BD7203ABDCB004FF52E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "ACME iOS TEAM";
+				TargetAttributes = {
+					84243BDE203ABDCB004FF52E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					84243BF2203ABDCB004FF52E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84243BDE203ABDCB004FF52E;
+					};
+					84243BFD203ABDCB004FF52E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84243BDE203ABDCB004FF52E;
+					};
+				};
+			};
+			buildConfigurationList = 84243BDA203ABDCB004FF52E /* Build configuration list for PBXProject "ARWithLocationTask" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84243BD6203ABDCB004FF52E;
+			productRefGroup = 84243BE0203ABDCB004FF52E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84243BDE203ABDCB004FF52E /* ARWithLocationTask */,
+				84243BF2203ABDCB004FF52E /* ARWithLocationTaskTests */,
+				84243BFD203ABDCB004FF52E /* ARWithLocationTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84243BDD203ABDCB004FF52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84243BED203ABDCB004FF52E /* LaunchScreen.storyboard in Resources */,
+				84A67A42203ACDAB00C83C01 /* art.scnassets in Resources */,
+				84243BEA203ABDCB004FF52E /* Assets.xcassets in Resources */,
+				84243BE8203ABDCB004FF52E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84243BF1203ABDCB004FF52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84243BFC203ABDCB004FF52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D0FCC838FE4D0B83F9E8F5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARWithLocationTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1406B84450642B2DB5986BE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARWithLocationTaskTests/Pods-ARWithLocationTaskTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26CA8460227AA6EFFB8B4F4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARWithLocationTask/Pods-ARWithLocationTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B4D5EB15B079F7B00C93EF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARWithLocationTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A81D7D5A0FE96B0BDB9B10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARWithLocationTaskUITests/Pods-ARWithLocationTaskUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B504EA4B4E2054EFF9717D8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARWithLocationTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC150F5D96A66AB451157F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARWithLocationTaskTests/Pods-ARWithLocationTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1724ACA6F93AD3386D0DFD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ARWithLocationTask/Pods-ARWithLocationTask-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARWithLocationTask/Pods-ARWithLocationTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9277D8AF19BB64237D4E5AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARWithLocationTaskUITests/Pods-ARWithLocationTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84243BDB203ABDCB004FF52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A67A44203AD1AA00C83C01 /* UserCollection.swift in Sources */,
+				84243C1D203ABE74004FF52E /* LocationNode.swift in Sources */,
+				84243C1F203ABE74004FF52E /* SceneLocationEstimate.swift in Sources */,
+				84243C1E203ABE74004FF52E /* SceneLocationEstimate+Extensions.swift in Sources */,
+				84243C25203ABE91004FF52E /* ReachabilityHelper.swift in Sources */,
+				84A67A48203AD75400C83C01 /* CoreConstant.swift in Sources */,
+				84243C1B203ABE74004FF52E /* CLLocation+Extensions.swift in Sources */,
+				84243C20203ABE74004FF52E /* SceneLocationView.swift in Sources */,
+				84243C1C203ABE74004FF52E /* LocationManager.swift in Sources */,
+				84243C22203ABE74004FF52E /* ARViewController.swift in Sources */,
+				84A67A46203AD32A00C83C01 /* LocationTableViewCell.swift in Sources */,
+				84243C1A203ABE74004FF52E /* CGPoint+Extensions.swift in Sources */,
+				84243BE3203ABDCB004FF52E /* AppDelegate.swift in Sources */,
+				84243C21203ABE74004FF52E /* SCNVector3+Extensions.swift in Sources */,
+				84A67A40203AC54100C83C01 /* LocationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84243BEF203ABDCB004FF52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84243BF8203ABDCB004FF52E /* ARWithLocationTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84243BFA203ABDCB004FF52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84243C03203ABDCB004FF52E /* ARWithLocationTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84243BF5203ABDCB004FF52E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84243BDE203ABDCB004FF52E /* ARWithLocationTask */;
+			targetProxy = 84243BF4203ABDCB004FF52E /* PBXContainerItemProxy */;
+		};
+		84243C00203ABDCB004FF52E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84243BDE203ABDCB004FF52E /* ARWithLocationTask */;
+			targetProxy = 84243BFF203ABDCB004FF52E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84243BE6203ABDCB004FF52E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84243BE7203ABDCB004FF52E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84243BEB203ABDCB004FF52E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84243BEC203ABDCB004FF52E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84243C05203ABDCB004FF52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84243C06203ABDCB004FF52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84243C08203ABDCB004FF52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8E40E8AEF176F692DB728C6 /* Pods-ARWithLocationTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63FWK3A3D9;
+				INFOPLIST_FILE = ARWithLocationTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aj.arkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84243C09203ABDCB004FF52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DADE2E5D602B3F4FC83B43 /* Pods-ARWithLocationTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63FWK3A3D9;
+				INFOPLIST_FILE = ARWithLocationTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aj.arkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84243C0B203ABDCB004FF52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB549398AABFBF4173A9EBB5 /* Pods-ARWithLocationTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARWithLocationTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.ARWithLocationTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARWithLocationTask.app/ARWithLocationTask";
+			};
+			name = Debug;
+		};
+		84243C0C203ABDCB004FF52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE635B4A3503FC888A499939 /* Pods-ARWithLocationTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARWithLocationTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.ARWithLocationTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARWithLocationTask.app/ARWithLocationTask";
+			};
+			name = Release;
+		};
+		84243C0E203ABDCB004FF52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B46E8F85512C00AA802F5CE8 /* Pods-ARWithLocationTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARWithLocationTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.ARWithLocationTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARWithLocationTask;
+			};
+			name = Debug;
+		};
+		84243C0F203ABDCB004FF52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 085ED5586F149704C7EF2274 /* Pods-ARWithLocationTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARWithLocationTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.ARWithLocationTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARWithLocationTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84243BDA203ABDCB004FF52E /* Build configuration list for PBXProject "ARWithLocationTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84243C05203ABDCB004FF52E /* Debug */,
+				84243C06203ABDCB004FF52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84243C07203ABDCB004FF52E /* Build configuration list for PBXNativeTarget "ARWithLocationTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84243C08203ABDCB004FF52E /* Debug */,
+				84243C09203ABDCB004FF52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84243C0A203ABDCB004FF52E /* Build configuration list for PBXNativeTarget "ARWithLocationTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84243C0B203ABDCB004FF52E /* Debug */,
+				84243C0C203ABDCB004FF52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84243C0D203ABDCB004FF52E /* Build configuration list for PBXNativeTarget "ARWithLocationTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84243C0E203ABDCB004FF52E /* Debug */,
+				84243C0F203ABDCB004FF52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84243BD7203ABDCB004FF52E /* Project object */;
+}
